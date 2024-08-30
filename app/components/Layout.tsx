@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import Navbar from './Navbar'
 
-function Layout() {
+interface ChildrenProps {
+  children: ReactNode
+}
+
+const Layout: React.FC<ChildrenProps> = ({ children }) => {
   return (
     <div>
       <Navbar />
+      <div className='mx-auto container py-10'>
+        {children}
+      </div>
     </div>
   )
 }
