@@ -1,9 +1,12 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 
 function Home() {
-  return (
-    <div>Home</div>
-  )
+    
+    return (
+        <div>
+        </div>
+    )
 }
 
 export default Home
